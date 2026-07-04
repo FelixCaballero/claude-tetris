@@ -50,7 +50,12 @@ jobs:
                innecesariamente.
 
             3. Publica en español, con `gh issue comment ${{ github.event.issue.number }}`,
-               UN ÚNICO comentario de diagnóstico con esta estructura:
+               UN ÚNICO comentario de diagnóstico con esta estructura. El comentario
+               debe estar escrito en formato Markdown válido y bien interpretable por
+               GitHub (encabezados con `##`/`###` o negrita con `**...**` para cada
+               sección, listas con `-`, bloques de código con backticks simples para
+               nombres de funciones/archivos como `game.js` o triples backticks con el
+               lenguaje indicado para fragmentos de código):
                - **Resumen**: qué describe el issue en 1-2 frases.
                - **Categoría**: tipo de problema (bug de lógica, rendering, controles,
                  puntuación, rendimiento, mejora, documentación, pregunta, etc.).
